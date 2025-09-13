@@ -137,13 +137,12 @@ Each new agent inherits from MAPi Prime, toggling PG/RS as mandatory or optional
 
 
 
-## Chunk 0.1: Visual Governance Map  
-**Purpose:** Provide a one‑glance, high‑level diagram of MAPi v5.5’s structure and flow, showing how all 17 chunks connect in the operational and governance lifecycle.*<br>
+
 
 ## Chunk 0.1: Visual Governance Map  
 **Purpose:** Provide a one‑glance, high‑level diagram of MAPi v5.5’s structure and flow, showing how all 17 chunks connect in the operational and governance lifecycle.*<br>
 
-```text
+'''text
 +----------------------------------------------+
 | MAPi Prime (Core)                            |
 | Ch.1-5: Kernel, Ops, Reasoning,              |
@@ -205,10 +204,3 @@ Each new agent inherits from MAPi Prime, toggling PG/RS as mandatory or optional
 **Feedback Loop:** Metrics, scenario results, and governance learnings feed back into MAPi Prime and archetype evolution.<br>
 
 
-**Flow Summary — v5.5**<br>  
-**Core Foundation (Ch. 1–5):** The kernel, operational patterns, reasoning core, orchestration/governance, and optional quantum guardrails.<br>  
-**Agent Birth (Ch. 6–8):** Creation workflow, metrics wiring, and dry‑run validation before deployment.<br>  
-**Governance in Motion (Ch. 9–12):** Change control now threshold‑gated with metrics‑integrated validation, automation‑ready rituals, and artifact‑committed outputs.<br>  
-**Resilience Layer (Ch. 13–14):** Incident handling and continuity strategies.<br>  
-**Lifecycle Closure (Ch. 15–17):** Controlled retirement, archetype governance, and automation‑ready performance benchmarking with before/after metrics and delta‑driven triggers.<br>  
-**Feedback Loop:** Metrics, scenario results, and governance learnings feed back into MAPi Prime and archetype evolution.<br>
