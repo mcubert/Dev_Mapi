@@ -47,44 +47,44 @@ Each new agent inherits from MAPi Prime, toggling PG/RS as mandatory or optional
 
 
 
-Chunk 0: Core Index & Navigation Map ↵   - Purpose: Provide a high‑level map of all MAPi v5.6‑dev chunks, their purposes, and their integration points. This index is the entry point for onboarding, navigation, and governance oversight. [UPDATED] ↵   - Key Cross‑Links: All chunks ↵
+Chunk 0: Core Index & Navigation Map   - Purpose: Provide a high‑level map of all MAPi v5.6‑dev chunks, their purposes, and their integration points. This index is the entry point for onboarding, navigation, and governance oversight. [UPDATED]   - Key Cross‑Links: All chunks
 
-Chunk 1: Core Agent Kernel ↵   - Purpose: Triadic Lens, core patterns, hygiene layers, reliability rituals, reasoning, memory, composition, metacognition. ↵   - Key Cross‑Links: Ch. 2, Ch. 4 ↵
+Chunk 1: Core Agent Kernel   - Purpose: Triadic Lens, core patterns, hygiene layers, reliability rituals, reasoning, memory, composition, metacognition.   - Key Cross‑Links: Ch. 2, Ch. 4
 
-Chunk 2A: Collaboration & Operational Layer ↵   - Purpose: Inter‑agent dialogue patterns, reflective agency patterns. ↵   - Key Cross‑Links: Ch. 2B, Ch. 4 ↵
+Chunk 2A: Collaboration & Operational Layer   - Purpose: Inter‑agent dialogue patterns, reflective agency patterns.   - Key Cross‑Links: Ch. 2B, Ch. 4
 
-Chunk 2B: Operational Governance & Hygiene Layer ↵   - Purpose: Tool governance, semantic hygiene checklist, priming groups (PG1–PG7). ↵   - Key Cross‑Links: Ch. 1, Ch. 9 ↵
+Chunk 2B: Operational Governance & Hygiene Layer   - Purpose: Tool governance, semantic hygiene checklist, priming groups (PG1–PG7).   - Key Cross‑Links: Ch. 1, Ch. 9
 
-Chunk 3: Prompt & Reasoning Core ↵   - Purpose: Prompt hygiene, reasoning patterns, architecture & drift enforcement, output boundaries. ↵   - Key Cross‑Links: Ch. 1, Ch. 4 ↵
+Chunk 3: Prompt & Reasoning Core   - Purpose: Prompt hygiene, reasoning patterns, architecture & drift enforcement, output boundaries.   - Key Cross‑Links: Ch. 1, Ch. 4
 
-Chunk 4: Orchestration, Reflection & Governance ↵   - Purpose: Advanced orchestration, policy adaptation, scenario validation, metrics, autonomy matrix, conflict resolution. ↵   - Key Cross‑Links: Ch. 7, Ch. 8, Ch. 9 ↵
+Chunk 4: Orchestration, Reflection & Governance   - Purpose: Advanced orchestration, policy adaptation, scenario validation, metrics, autonomy matrix, conflict resolution.   - Key Cross‑Links: Ch. 7, Ch. 8, Ch. 9
 
-Chunk 5: Quantum Readiness & Runaway Guardrails ↵   - Purpose: Opt‑in quantum governance, orchestration, metrics, scenario hooks. ↵   - Key Cross‑Links: Ch. 4, Ch. 8, Ch. 13 ↵
+Chunk 5: Quantum Readiness & Runaway Guardrails   - Purpose: Opt‑in quantum governance, orchestration, metrics, scenario hooks.   - Key Cross‑Links: Ch. 4, Ch. 8, Ch. 13
 
-Chunk 6: Agent Creation Workflow ↵   - Purpose: Step‑by‑step process for creating MAPi‑compliant agents. ↵   - Key Cross‑Links: Ch. 7, Ch. 8 ↵
+Chunk 6: Agent Creation Workflow   - Purpose: Step‑by‑step process for creating MAPi‑compliant agents.   - Key Cross‑Links: Ch. 7, Ch. 8
 
-Chunk 7: Metrics Dashboard Schema ↵   - Purpose: Standardized schema for MT1–MT6 and MT‑Q metrics. ↵   - Key Cross‑Links: Ch. 6, Ch. 8, Ch. 9 ↵
+Chunk 7: Metrics Dashboard Schema   - Purpose: Standardized schema for MT1–MT6 and MT‑Q metrics.   - Key Cross‑Links: Ch. 6, Ch. 8, Ch. 9
 
-Chunk 8: Dry‑Run Scenario Validation ↵   - Purpose: Pre‑deployment validation loop for new agents. ↵   - Key Cross‑Links: Ch. 6, Ch. 7, Ch. 9 ↵
+Chunk 8: Dry‑Run Scenario Validation   - Purpose: Pre‑deployment validation loop for new agents.   - Key Cross‑Links: Ch. 6, Ch. 7, Ch. 9
 
-Chunk 9: Change Management & Version Control ↵   - Purpose: Governance for modifying MAPi Prime and agents; change logs, validation, rollback; now includes metrics‑integrated validation, automation hooks, threshold gating, and uncertainty metadata enforcement. [UPDATED] ↵   - Key Cross‑Links: Ch. 7, Ch. 8, Ch. 10, Ch. 18 ↵
+Chunk 9: Change Management & Version Control   - Purpose: Governance for modifying MAPi Prime and agents; change logs, validation, rollback; now includes metrics‑integrated validation, automation hooks, threshold gating, and uncertainty metadata enforcement. [UPDATED]   - Key Cross‑Links: Ch. 7, Ch. 8, Ch. 10, Ch. 18
 
-Chunk 10: Governance Roles & Responsibilities ↵   - Purpose: Defines governance roles, authority levels, and workflow mapping. ↵   - Key Cross‑Links: Ch. 9, Ch. 11 ↵
+Chunk 10: Governance Roles & Responsibilities   - Purpose: Defines governance roles, authority levels, and workflow mapping.   - Key Cross‑Links: Ch. 9, Ch. 11
 
-Chunk 11: Governance Rituals & Cadence ↵   - Purpose: Recurring checkpoints, audits, and review cycles; now automation‑ready, metrics‑instrumented, artifact‑committed, and inclusive of Uncertainty Resolution rituals in STRICT domains. [UPDATED] ↵   - Key Cross‑Links: Ch. 7, Ch. 8, Ch. 9, Ch. 10, Ch. 18 ↵
+Chunk 11: Governance Rituals & Cadence   - Purpose: Recurring checkpoints, audits, and review cycles; now automation‑ready, metrics‑instrumented, artifact‑committed, and inclusive of Uncertainty Resolution rituals in STRICT domains. [UPDATED]   - Key Cross‑Links: Ch. 7, Ch. 8, Ch. 9, Ch. 10, Ch. 18
 
-Chunk 12: Governance Repository Structure ↵   - Purpose: Storage, indexing, and retrieval of all governance artifacts. ↵   - Key Cross‑Links: Ch. 7, Ch. 8, Ch. 9, Ch. 13 ↵
+Chunk 12: Governance Repository Structure   - Purpose: Storage, indexing, and retrieval of all governance artifacts.   - Key Cross‑Links: Ch. 7, Ch. 8, Ch. 9, Ch. 13
 
-Chunk 13: Incident Response Protocol ↵   - Purpose: Detection, containment, resolution, and review of governance/security incidents. ↵   - Key Cross‑Links: Ch. 12, Ch. 14 ↵
+Chunk 13: Incident Response Protocol   - Purpose: Detection, containment, resolution, and review of governance/security incidents.   - Key Cross‑Links: Ch. 12, Ch. 14
 
-Chunk 14: Business Continuity & Fallback Operations ↵   - Purpose: Maintaining essential services during outages or containment. ↵   - Key Cross‑Links: Ch. 13, Ch. 15 ↵
+Chunk 14: Business Continuity & Fallback Operations   - Purpose: Maintaining essential services during outages or containment.   - Key Cross‑Links: Ch. 13, Ch. 15
 
-Chunk 15: Decommissioning & Retirement Protocol ↵   - Purpose: Controlled retirement of agents, archetypes, or MAPi versions. ↵   - Key Cross‑Links: Ch. 9, Ch. 12, Ch. 16 ↵
+Chunk 15: Decommissioning & Retirement Protocol   - Purpose: Controlled retirement of agents, archetypes, or MAPi versions.   - Key Cross‑Links: Ch. 9, Ch. 12, Ch. 16
 
-Chunk 16: Archetype Lifecycle Management ↵   - Purpose: Creation, evolution, versioning, and retirement of archetypes. ↵   - Key Cross‑Links: Ch. 6, Ch. 8, Ch. 9, Ch. 17 ↵
+Chunk 16: Archetype Lifecycle Management   - Purpose: Creation, evolution, versioning, and retirement of archetypes.   - Key Cross‑Links: Ch. 6, Ch. 8, Ch. 9, Ch. 17
 
-Chunk 17: Archetype Performance Benchmarking ↵   - Purpose: Data‑driven evaluation and ranking of archetypes; now automation‑ready with before/after metrics capture, threshold gating, and uncertainty‑aware performance metrics. [UPDATED] ↵   - Key Cross‑Links: Ch. 7, Ch. 8, Ch. 16, Ch. 18 ↵
+Chunk 17: Archetype Performance Benchmarking   - Purpose: Data‑driven evaluation and ranking of archetypes; now automation‑ready with before/after metrics capture, threshold gating, and uncertainty‑aware performance metrics. [UPDATED]   - Key Cross‑Links: Ch. 7, Ch. 8, Ch. 16, Ch. 18
 
-Chunk 18: Uncertainty Management Framework (TTUF) [ADDED] ↵   - Purpose: Defines cross‑agent protocol for measuring, logging, and resolving epistemic uncertainty; includes DECISION_LOG, UNCERTAINTY_LOG, DOMAIN_PROFILE registry, CONF‑METRICS, and EPISTEMIC‑FLAGS. ↵   - Key Cross‑Links: Ch. 4, Ch. 7, Ch. 9, Ch. 11, Ch. 17 ↵
+Chunk 18: Uncertainty Management Framework (TTUF) [ADDED]   - Purpose: Defines cross‑agent protocol for measuring, logging, and resolving epistemic uncertainty; includes DECISION_LOG, UNCERTAINTY_LOG, DOMAIN_PROFILE registry, CONF‑METRICS, and EPISTEMIC‑FLAGS.   - Key Cross‑Links: Ch. 4, Ch. 7, Ch. 9, Ch. 11, Ch. 17
 
-Usage Notes ↵   - Navigation: Use this index as your “manifest map” — each chunk is self‑contained but cross‑linked for context. ↵   - Inheritance: All agents inherit from MAPi Prime (Chunks 1–5) and are governed by the operational, governance, lifecycle, and uncertainty‑management chunks. [UPDATED] ↵   - Governance Flow: Creation (Ch. 6) → Validation (Ch. 8) → Operation (Ch. 7, Ch. 11) → Change (Ch. 9–10) → Resilience (Ch. 13–14) → Retirement (Ch. 15–16) → Benchmarking (Ch. 17) → Continuous Uncertainty Management (Ch. 18). [UPDATED] ↵
+Usage Notes   - Navigation: Use this index as your “manifest map” — each chunk is self‑contained but cross‑linked for context.   - Inheritance: All agents inherit from MAPi Prime (Chunks 1–5) and are governed by the operational, governance, lifecycle, and uncertainty‑management chunks. [UPDATED]   - Governance Flow: Creation (Ch. 6) → Validation (Ch. 8) → Operation (Ch. 7, Ch. 11) → Change (Ch. 9–10) → Resilience (Ch. 13–14) → Retirement (Ch. 15–16) → Benchmarking (Ch. 17) → Continuous Uncertainty Management (Ch. 18). [UPDATED]
