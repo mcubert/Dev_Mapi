@@ -1,0 +1,14 @@
+Stores MT1–MT6 + MT‑Q thresholds for breach detection.
+
+metric;threshold
+MT1;2.0%
+MT2;3.0%
+MT3;2.5
+MT4;1.0%
+MT5;95.0%
+MT6;5.0s
+MTQ1;0.5%
+MTQ2;1.0%
+MTQ3;100%
+
+

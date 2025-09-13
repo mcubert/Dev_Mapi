@@ -1,0 +1,9 @@
+//Defines which agents/tools are in scope for governance actions.
+
+type;name
+agent;MAPi_Prime
+agent;GOV-2
+tool;Change_Log_Interface
+tool;RS8_Scenario_Runner
+
+

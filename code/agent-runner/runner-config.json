@@ -1,0 +1,16 @@
+{
+  "agent_id": "<Agent_ID>",
+  "poll_interval_sec": 15,
+  "max_tasks_per_cycle": 5,
+  "paths": {
+    "repo_root": ".",
+    "inbox": "Agents/<Agent_ID>/inbox.csv",
+    "outbox": "Agents/<Agent_ID>/outbox.csv",
+    "change_logs": "Agents/<Agent_ID>/Change_Logs/change_logs.csv",
+    "scenario_results": "Agents/<Agent_ID>/Scenario_Results/scenario_results.csv",
+    "metrics": "Agents/<Agent_ID>/Metrics/metrics.csv",
+    "manifest": "Agents/<Agent_ID>/Manifests/manifest.csv",
+    "scope_whitelist": "Config/scope_whitelist.csv",
+    "thresholds": "Config/thresholds.csv"
+  }
+}

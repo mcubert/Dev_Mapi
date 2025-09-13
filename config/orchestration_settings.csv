@@ -1,0 +1,8 @@
+Flags for autonomy level, polling intervals, message bus topics (future).
+
+setting;value
+autonomy_level;restricted
+poll_interval_sec;60
+message_bus_topic_prefix;mapi
+
+
