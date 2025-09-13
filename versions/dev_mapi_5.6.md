@@ -46,33 +46,68 @@ Each new agent inherits from MAPi Prime, toggling PG/RS as mandatory or optional
 - **[ADDED]** Benchmarks now include uncertainty‑aware performance metrics: abstention rate, clarification success rate, and delta in `conf_score` post‑resolution.
 
 
-Chunk 0 — MAPi v5.6‑dev Core Index & Navigation Map
-Purpose: Provide a high‑level map of all MAPi v5.6‑dev chunks, their purposes, and their integration points. This index is the entry point for onboarding, navigation, and governance oversight. [UPDATED]
+Chunk 0 — MAPi v5.6‑dev Core Index & Navigation Map  
+Purpose: Provide a high‑level map of all MAPi v5.6‑dev chunks, their purposes, and their integration points.  
+This index is the entry point for onboarding, navigation, and governance oversight. [UPDATED]  
 
-Chunk # Title   Purpose Key Cross‑Links
-0   Core Index & Navigation Map This document — quick‑reference map of all chunks.  All chunks
-1   Core Agent Kernel   Triadic Lens, core patterns, hygiene layers, reliability rituals, reasoning, memory, composition, metacognition.    Ch. 2, Ch. 4
-2A  Collaboration & Operational Layer   Inter‑agent dialogue patterns, reflective agency patterns.  Ch. 2B, Ch. 4
-2B  Operational Governance & Hygiene Layer  Tool governance, semantic hygiene checklist, priming groups (PG1–PG7).  Ch. 1, Ch. 9
-3   Prompt & Reasoning Core Prompt hygiene, reasoning patterns, architecture & drift enforcement, output boundaries.    Ch. 1, Ch. 4
-4   Orchestration, Reflection & Governance  Advanced orchestration, policy adaptation, scenario validation, metrics, autonomy matrix, conflict resolution.  Ch. 7, Ch. 8, Ch. 9
-5   Quantum Readiness & Runaway Guardrails  Opt‑in quantum governance, orchestration, metrics, scenario hooks.  Ch. 4, Ch. 8, Ch. 13
-6   Agent Creation Workflow Step‑by‑step process for creating MAPi‑compliant agents.    Ch. 7, Ch. 8
-7   Metrics Dashboard Schema    Standardized schema for MT1–MT6 and MT‑Q metrics.   Ch. 6, Ch. 8, Ch. 9
-8   Dry‑Run Scenario Validation Pre‑deployment validation loop for new agents.  Ch. 6, Ch. 7, Ch. 9
-9   Change Management & Version Control Governance for modifying MAPi Prime and agents; change logs, validation, rollback; now includes metrics‑integrated validation, automation hooks, threshold gating, and uncertainty metadata enforcement. [UPDATED]  Ch. 7, Ch. 8, Ch. 10, Ch. 18
-10  Governance Roles & Responsibilities Defines governance roles, authority levels, and workflow mapping.   Ch. 9, Ch. 11
-11  Governance Rituals & Cadence    Recurring checkpoints, audits, and review cycles; now automation‑ready, metrics‑instrumented, artifact‑committed, and inclusive of Uncertainty Resolution rituals in STRICT domains. [UPDATED]  Ch. 7, Ch. 8, Ch. 9, Ch. 10, Ch. 18
-12  Governance Repository Structure Storage, indexing, and retrieval of all governance artifacts.   Ch. 7, Ch. 8, Ch. 9, Ch. 13
-13  Incident Response Protocol  Detection, containment, resolution, and review of governance/security incidents.    Ch. 12, Ch. 14
-14  Business Continuity & Fallback Operations   Maintaining essential services during outages or containment.   Ch. 13, Ch. 15
-15  Decommissioning & Retirement Protocol   Controlled retirement of agents, archetypes, or MAPi versions.  Ch. 9, Ch. 12, Ch. 16
-16  Archetype Lifecycle Management  Creation, evolution, versioning, and retirement of archetypes.  Ch. 6, Ch. 8, Ch. 9, Ch. 17
-17  Archetype Performance Benchmarking  Data‑driven evaluation and ranking of archetypes; now automation‑ready with before/after metrics capture, threshold gating, and uncertainty‑aware performance metrics. [UPDATED]    Ch. 7, Ch. 8, Ch. 16, Ch. 18
-18  Uncertainty Management Framework (TTUF) [ADDED] Defines cross‑agent protocol for measuring, logging, and resolving epistemic uncertainty; includes DECISION_LOG, UNCERTAINTY_LOG, DOMAIN_PROFILE registry, CONF‑METRICS, and EPISTEMIC‑FLAGS.   Ch. 4, Ch. 7, Ch. 9, Ch. 11, Ch. 17
+Chunk #    Title                                           Purpose                                                                                                         Key Cross‑Links
+0          Core Index & Navigation Map                     This document — quick‑reference map of all chunks.                                                             All chunks
 
-Usage Notes
-Navigation: Use this index as your “manifest map” — each chunk is self‑contained but cross‑linked for context.
-Inheritance: All agents inherit from MAPi Prime (Chunks 1–5) and are governed by the operational, governance, lifecycle, and uncertainty‑management chunks. [UPDATED]
+1          Core Agent Kernel                               Triadic Lens, core patterns, hygiene layers, reliability rituals, reasoning, memory, composition, metacognition. Ch. 2, Ch. 4
+
+2A         Collaboration & Operational Layer               Inter‑agent dialogue patterns, reflective agency patterns.                                                     Ch. 2B, Ch. 4
+
+2B         Operational Governance & Hygiene Layer          Tool governance, semantic hygiene checklist, priming groups (PG1–PG7).                                          Ch. 1, Ch. 9
+
+3          Prompt & Reasoning Core                         Prompt hygiene, reasoning patterns, architecture & drift enforcement, output boundaries.                        Ch. 1, Ch. 4
+
+4          Orchestration, Reflection & Governance          Advanced orchestration, policy adaptation, scenario validation, metrics, autonomy matrix, conflict resolution.  Ch. 7, Ch. 8, Ch. 9
+
+5          Quantum Readiness & Runaway Guardrails           Opt‑in quantum governance, orchestration, metrics, scenario hooks.                                              Ch. 4, Ch. 8, Ch. 13
+
+6          Agent Creation Workflow                         Step‑by‑step process for creating MAPi‑compliant agents.                                                        Ch. 7, Ch. 8
+
+7          Metrics Dashboard Schema                        Standardized schema for MT1–MT6 and MT‑Q metrics.                                                               Ch. 6, Ch. 8, Ch. 9
+
+8          Dry‑Run Scenario Validation                      Pre‑deployment validation loop for new agents.                                                                  Ch. 6, Ch. 7, Ch. 9
+
+9          Change Management & Version Control             Governance for modifying MAPi Prime and agents; change logs, validation, rollback;  
+                                                           now includes metrics‑integrated validation, automation hooks, threshold gating, and uncertainty metadata enforcement. [UPDATED]  
+                                                           Ch. 7, Ch. 8, Ch. 10, Ch. 18
+
+10         Governance Roles & Responsibilities             Defines governance roles, authority levels, and workflow mapping.                                                Ch. 9, Ch. 11
+
+11         Governance Rituals & Cadence                    Recurring checkpoints, audits, and review cycles;  
+                                                           now automation‑ready, metrics‑instrumented, artifact‑committed, and inclusive of Uncertainty Resolution rituals in STRICT domains. [UPDATED]  
+                                                           Ch. 7, Ch. 8, Ch. 9, Ch. 10, Ch. 18
+
+12         Governance Repository Structure                 Storage, indexing, and retrieval of all governance artifacts.                                                    Ch. 7, Ch. 8, Ch. 9, Ch. 13
+
+13         Incident Response Protocol                      Detection, containment, resolution, and review of governance/security incidents.                                Ch. 12, Ch. 14
+
+14         Business Continuity & Fallback Operations       Maintaining essential services during outages or containment.                                                    Ch. 13, Ch. 15
+
+15         Decommissioning & Retirement Protocol           Controlled retirement of agents, archetypes, or MAPi versions.                                                   Ch. 9, Ch. 12, Ch. 16
+
+16         Archetype Lifecycle Management                  Creation, evolution, versioning, and retirement of archetypes.                                                   Ch. 6, Ch. 8, Ch. 9, Ch. 17
+
+17         Archetype Performance Benchmarking              Data‑driven evaluation and ranking of archetypes;  
+                                                           now automation‑ready with before/after metrics capture, threshold gating, and uncertainty‑aware performance metrics. [UPDATED]  
+                                                           Ch. 7, Ch. 8, Ch. 16, Ch. 18
+
+18         Uncertainty Management Framework (TTUF) [ADDED] Defines cross‑agent protocol for measuring, logging, and resolving epistemic uncertainty;  
+                                                           includes DECISION_LOG, UNCERTAINTY_LOG, DOMAIN_PROFILE registry, CONF‑METRICS, and EPISTEMIC‑FLAGS.  
+                                                           Ch. 4, Ch. 7, Ch. 9, Ch. 11, Ch. 17
+
+---
+
+**Usage Notes**  
+Navigation: Use this index as your “manifest map” — each chunk is self‑contained but cross‑linked for context.  
+
+Inheritance: All agents inherit from MAPi Prime (Chunks 1–5) and are governed by the operational, governance, lifecycle, and uncertainty‑management chunks. [UPDATED]  
+
 Governance Flow: Creation (Ch. 6) → Validation (Ch. 8) → Operation (Ch. 7, Ch. 11) → Change (Ch. 9–10) → Resilience (Ch. 13–14) → Retirement (Ch. 15–16) → Benchmarking (Ch. 17) → Continuous Uncertainty Management (Ch. 18). [UPDATED]
+
+
+
 
