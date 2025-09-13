@@ -106,3 +106,4 @@ Navigation: Use this index as your “manifest map” — each chunk is self‑c
 Inheritance: All agents inherit from MAPi Prime (Chunks 1–5) and are governed by the operational, governance, lifecycle, and uncertainty‑management chunks. [UPDATED]  
 
 Governance Flow: Creation (Ch. 6) → Validation (Ch. 8) → Operation (Ch. 7, Ch. 11) → Change (Ch. 9–10) → Resilience (Ch. 13–14) → Retirement (Ch. 15–16) → Benchmarking (Ch. 17) → Continuous Uncertainty Management (Ch. 18). [UPDATED]
+
