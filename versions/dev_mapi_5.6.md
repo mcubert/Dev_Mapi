@@ -134,3 +134,27 @@ Each new agent inherits from MAPi Prime, toggling PG/RS as mandatory or optional
 **Inheritance:** All agents inherit from MAPi Prime (Chunks 1–5) and are governed by the operational, governance, lifecycle, and uncertainty‑management chunks. [UPDATED]<br>
 **Governance Flow:** Creation (Ch. 6) → Validation (Ch. 8) → Operation (Ch. 7, Ch. 11) → Change (Ch. 9–10) → Resilience (Ch. 13–14) → Retirement (Ch. 15–16) → Benchmarking (Ch. 17) → Continuous Uncertainty Management (Ch. 18). [UPDATED]<br>
 
+
+
+## Chunk 0.1: Visual Governance Map  
+**Purpose:** Provide a one‑glance, high‑level diagram of MAPi v5.5’s structure and flow, showing how all 17 chunks connect in the operational and governance lifecycle.*<br>
+
++----------------------------------------------+ | MAPi Prime (Core) | | Ch.1-5: Kernel, Ops, Reasoning, | | Governance, Quantum Guardrails | +----------------------------------------------+ | v +----------------------------------------------+ | Agent Creation & Validation | | Ch.6: Creation Workflow | | Ch.7: Metrics Schema | | Ch.8: Dry-Run Scenario Validation | +----------------------------------------------+ | v +----------------------------------------------+ | Operational Governance | | Ch.9: Change Mgmt & Version Control | | (metrics-integrated validation, | | automation hooks, threshold gating) | | Ch.10: Roles & Responsibilities | | Ch.11: Governance Rituals & Cadence | | (automation-ready, metrics-logged, | | artifact-committed) | | Ch.12: Governance Repository | +----------------------------------------------+ | v +----------------------------------------------+ | Resilience & Incident Mgmt | | Ch.13: Incident Response Protocol | | Ch.14: Business Continuity & Fallback | +----------------------------------------------+ | v +----------------------------------------------+ | Lifecycle Closure | | Ch.15: Decommissioning & Retirement | | Ch.16: Archetype Lifecycle Mgmt | | Ch.17: Archetype Performance Benchmarking | | (automation-ready, before/after | | metrics, threshold gating) | +----------------------------------------------+ ^ | +----------------------------------------------+ | Feedback Loop to MAPi Prime & Archetypes | | (Metrics, Scenarios, Governance Changes) | +----------------------------------------------+
+
+
+**Flow Summary — v5.5**<br>  
+**Core Foundation (Ch. 1–5):** The kernel, operational patterns, reasoning core, orchestration/governance, and optional quantum guardrails.<br>  
+**Agent Birth (Ch. 6–8):** Creation workflow, metrics wiring, and dry‑run validation before deployment.<br>  
+**Governance in Motion (Ch. 9–12):** Change control now threshold‑gated with metrics‑integrated validation, automation‑ready rituals, and artifact‑committed outputs.<br>  
+**Resilience Layer (Ch. 13–14):** Incident handling and continuity strategies.<br>  
+**Lifecycle Closure (Ch. 15–17):** Controlled retirement, archetype governance, and automation‑ready performance benchmarking with before/after metrics and delta‑driven triggers.<br>  
+**Feedback Loop:** Metrics, scenario results, and governance learnings feed back into MAPi Prime and archetype evolution.<br>
+
+
+**Flow Summary — v5.5**<br>  
+**Core Foundation (Ch. 1–5):** The kernel, operational patterns, reasoning core, orchestration/governance, and optional quantum guardrails.<br>  
+**Agent Birth (Ch. 6–8):** Creation workflow, metrics wiring, and dry‑run validation before deployment.<br>  
+**Governance in Motion (Ch. 9–12):** Change control now threshold‑gated with metrics‑integrated validation, automation‑ready rituals, and artifact‑committed outputs.<br>  
+**Resilience Layer (Ch. 13–14):** Incident handling and continuity strategies.<br>  
+**Lifecycle Closure (Ch. 15–17):** Controlled retirement, archetype governance, and automation‑ready performance benchmarking with before/after metrics and delta‑driven triggers.<br>  
+**Feedback Loop:** Metrics, scenario results, and governance learnings feed back into MAPi Prime and archetype evolution.<br>
