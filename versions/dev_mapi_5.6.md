@@ -142,7 +142,8 @@ Each new agent inherits from MAPi Prime, toggling PG/RS as mandatory or optional
 ## Chunk 0.1: Visual Governance Map  
 **Purpose:** Provide a one‑glance, high‑level diagram of MAPi v5.5’s structure and flow, showing how all 17 chunks connect in the operational and governance lifecycle.*<br>
 
-'''text
+```
+
 +----------------------------------------------+
 | MAPi Prime (Core)                            |
 | Ch.1-5: Kernel, Ops, Reasoning,              |
@@ -193,7 +194,7 @@ Each new agent inherits from MAPi Prime, toggling PG/RS as mandatory or optional
 | (Metrics, Scenarios, Governance Changes)     |
 +----------------------------------------------+
 
-
+```
 
 **Flow Summary — v5.5**<br>  
 **Core Foundation (Ch. 1–5):** The kernel, operational patterns, reasoning core, orchestration/governance, and optional quantum guardrails.<br>  
