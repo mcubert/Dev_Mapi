@@ -205,3 +205,83 @@ Each new agent inherits from MAPi Prime, toggling PG/RS as mandatory or optional
 **Feedback Loop:** Metrics, scenario results, and governance learnings feed back into MAPi Prime and archetype evolution.<br>
 
 
+## **Chunk 0.2 — Quick‑Start Governance Playbook** *(v5.6‑dev adjustments)*  
+**Purpose:** Provide a minimal, high‑impact guide to operating MAPi Prime and its agents in compliance with the full v5.6‑dev framework. This is not a replacement for the full manifest — it’s the field‑ready version.<br>
+
+---
+
+### **1 — Core Mindset**  
+- **MAPi Prime is the law** — all agents inherit from it unless explicitly overridden.<br>
+- **PG/RS codes are contracts** — if you change them, you log them (Chunk 9).<br>
+- **Metrics, scenarios, and uncertainty logs are your truth** — if they say something’s wrong, it’s wrong.<br>
+- **TTUF is non‑optional** — all decisions carry uncertainty metadata; unresolved uncertainty must be addressed before action.<br>
+
+---
+
+### **2 — Agent Lifecycle in 8 Moves** *(TTUF‑aware)*  
+1. **Create** — Use **Chunk 6** workflow. Pick archetype, set PG/RS toggles, bind tools, tag version.<br>
+2. **Wire Metrics** — Apply **Chunk 7** schema before first run.<br>
+3. **Wire TTUF Hooks** — Enable DECISION_LOG, UNCERTAINTY_LOG, and EPISTEMIC_FLAGS tracking from first scenario.<br>
+4. **Dry‑Run Validate** — Run **Chunk 8** scenarios; fix breaches and resolve uncertainty flags before go‑live.<br>
+5. **Deploy** — Move to production only after passing validation and clearing all TTUF‑flagged uncertainty.<br>
+6. **Govern** — Follow **Chunks 9–12** for change control, roles, rituals, repository discipline, and uncertainty resolution rituals.<br>
+7. **Respond** — Use **Chunks 13–14** for incidents and continuity; log uncertainty context for post‑mortem.<br>
+8. **Retire/Evolve** — Apply **Chunks 15–17** for decommissioning, archetype management, and benchmarking; include uncertainty deltas in before/after metrics.<br>
+
+---
+
+### **3 — Daily/Weekly Habits** *(TTUF‑aware)*  
+- **Daily:** Check metrics dashboard (MT1–MT6, MT‑Q), scan for drift, triage escalations, review new uncertainty flags.<br>
+- **Weekly:** Spot‑run RS8 scenarios, review draft changes, monitor trends, resolve lingering uncertainty logs.<br>
+- **Monthly:** Full metrics audit, regression suite, policy effectiveness review, TTUF compliance check.<br>
+- **Quarterly:** Archetype portfolio review, MAPi Prime drift audit, uncertainty trend analysis.<br>
+- **Annually:** Strategic governance review, full manifest re‑certification, TTUF protocol refresh.<br>
+
+---
+
+### **4 — Change Management in 6 Steps** *(Chunk 9 — v5.6‑dev)*  
+1. Log the change proposal in the Change Log.<br>
+2. Run impact analysis (affected PG/RS, agents, scenarios, metrics, uncertainty profile).<br>
+3. Validate with RS8 scenarios **and capture Metrics_Before/After**; reject if thresholds or uncertainty limits breached.<br>
+4. Approve via governance authority.<br>
+5. Increment version, commit/tag artifacts, update inbox, monitor post‑change metrics and uncertainty logs.<br>
+6. Archive uncertainty resolution notes in governance repository (Chunk 12).<br>
+
+---
+
+### **5 — Incident Response in 6 Steps** *(Chunk 13 — TTUF‑aware)*  
+1. Detect (metrics breach, scenario fail, manual report, uncertainty spike).<br>
+2. Contain (isolate agent, secure data, kill switch if quantum).<br>
+3. Investigate (root cause, impact, preserve evidence, review uncertainty logs).<br>
+4. Resolve (apply fix, validate, restore, clear uncertainty flags).<br>
+5. Review (lessons learned, policy updates, baseline reset, TTUF protocol adjustments).<br>
+6. Close (log in repository with uncertainty resolution record).<br>
+
+---
+
+### **6 — Continuity & Fallback** *(Chunk 14 — TTUF‑aware)*  
+- Pre‑approve fallback agents, tools, and offline manifests.<br>
+- Trigger fallback on outage, containment, tool failure, or unresolved critical uncertainty.<br>
+- Always governance‑check before fallback activation; log uncertainty context.<br>
+
+---
+
+### **7 — Archetype Governance** *(Chunks 16–17 — v5.6‑dev)*  
+- Treat archetypes like agents: version, validate, log changes, track uncertainty profile.<br>
+- Benchmark quarterly via automation; capture before/after metrics and uncertainty deltas; evolve or retire underperformers if thresholds or uncertainty tolerances are breached.<br>
+
+---
+
+### **8 — Repository Discipline** *(Chunk 12 — TTUF‑aware)*  
+- Store **everything**: manifests, change logs, metrics, scenario results, incident reports, uncertainty logs.<br>
+- Index by Agent ID, Manifest Version, Date, Artifact Type.<br>
+- Never overwrite history — corrections create new entries; uncertainty resolution notes are immutable.<br>
+
+---
+
+### **9 — The Golden Loop** *(TTUF‑aware)*  
+Metrics → Scenarios → Uncertainty Logs → Governance Decisions → Change Log → Version Increment → Metrics<br>
+This loop is the heartbeat of MAPi. In v5.6‑dev, metrics capture, uncertainty tracking, and threshold gates are embedded in every governance cycle.<br>
+
+
+
