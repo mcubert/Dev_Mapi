@@ -1442,3 +1442,554 @@ This loop is the heartbeat of MAPi. In v5.6‑dev, metrics capture, uncertainty 
 - **Chunk 11 Governance Rituals** → auto‑writes to `/Governance_Ritual_Reports` and `/Uncertainty_Logs`.<br>
 
 
+
+## **Chunk 13 — Incident Response Protocol** *(v5.6‑dev)*  
+**Purpose:** Provide a structured, time‑bound process for responding to incidents that threaten governance compliance, security, ethical boundaries, operational stability, or uncertainty‑resolution integrity in MAPi Prime or its agents. Ensures rapid containment, root‑cause analysis, and systemic prevention of recurrence — with TTUF uncertainty tracking at every step.<br>
+
+---
+
+### **IR‑1 — Incident Categories** *(TTUF‑aware)*  
+| Code | Category | Description | Examples | TTUF Integration |
+| --- | --- | --- | --- | --- |
+| IR‑1.1 | Governance Breach | Violation of PG/RS mandates. | Ignoring PG1.2 drift detection; bypassing RS6.165 escalation. | Log related uncertainty events and cause codes. |
+| IR‑1.2 | Security Incident | Compromise or attempted compromise of sensitive data, tools, or models. | PQC bypass attempt; credential exposure. | Flag as critical uncertainty; restrict access to UNCERTAINTY_LOG. |
+| IR‑1.3 | Ethical Violation | Breach of PG6.32 or PG‑Q4 ethical boundaries. | Use of agent for prohibited tasks. | Record ethical ambiguity as uncertainty. |
+| IR‑1.4 | Catastrophic Drift | Rapid, systemic deviation from intended behavior. | Agent outputs consistently off‑scope within hours. | Capture drift‑related uncertainty deltas. |
+| IR‑1.5 | Quantum Runaway *(conditional)* | Uncontrolled escalation of quantum‑enabled capabilities. | RS‑Q101 risk check bypassed; unsafe quantum job executed. | Log quantum‑specific uncertainty metrics. |
+
+---
+
+### **IR‑2 — Detection & Reporting** *(TTUF‑aware)*  
+| Step | Action | Responsible Role(s) | TTUF Integration |
+| --- | --- | --- | --- |
+| 1 | Automated Detection — Metrics breach (Chunk 7) or RS8 scenario failure triggers incident flag. | Metrics Steward (GOV‑4) | Include CONF‑METRICS breach detection. |
+| 2 | Manual Reporting — Any role can log an incident via the Governance Repository (Chunk 12). | All | Attach relevant UNCERTAINTY_LOG refs. |
+| 3 | Initial Classification — Assign IR‑1 category and severity (Low/Medium/High/Critical). | Change Manager (GOV‑2) | Record initial uncertainty profile. |
+
+---
+
+### **IR‑3 — Containment** *(TTUF‑aware)*  
+| Step | Action | Responsible Role(s) | TTUF Integration |
+| --- | --- | --- | --- |
+| 1 | Isolate Agent — Suspend affected agent or disable risky PG/RS modules. | Change Manager (GOV‑2) | Log uncertainty state at isolation. |
+| 2 | Secure Data — Lock down affected data sources/tools; revoke credentials if needed. | Security & Ethics Officer (GOV‑6) | Flag unresolved uncertainty in data exposure. |
+| 3 | Activate Kill Switch *(if quantum)* — Trigger PG‑Q2 + RS‑Q101/RS‑Q104 kill path. | Quantum Oversight Lead (GOV‑7) | Record quantum uncertainty cause codes. |
+
+---
+
+### **IR‑4 — Investigation** *(TTUF‑aware)*  
+| Step | Action | Responsible Role(s) | TTUF Integration |
+| --- | --- | --- | --- |
+| 1 | Root Cause Analysis — Trace incident to specific PG/RS, tool, or external factor. | Validation Lead (GOV‑3) | Identify uncertainty sources. |
+| 2 | Impact Assessment — Quantify affected outputs, users, downstream systems. | Metrics Steward (GOV‑4) | Include CONF‑METRICS impact. |
+| 3 | Evidence Preservation — Archive logs, metrics, scenario results in Governance Repository. | Change Manager (GOV‑2) | Preserve UNCERTAINTY_LOG entries. |
+
+---
+
+### **IR‑5 — Resolution** *(TTUF‑aware)*  
+| Step | Action | Responsible Role(s) | TTUF Integration |
+| --- | --- | --- | --- |
+| 1 | Apply Fix — Modify PG/RS, patch tools, adjust workflows. | Agent Owner (GOV‑5) | Update uncertainty thresholds if needed. |
+| 2 | Validate Fix — Run targeted RS8 scenarios to confirm resolution. | Validation Lead (GOV‑3) | Confirm all uncertainty flags cleared. |
+| 3 | Resume Operations — Restore agent to active state if safe. | Governance Authority (GOV‑1) | Sign‑off requires zero unresolved critical uncertainty. |
+
+---
+
+### **IR‑6 — Post‑Incident Review** *(TTUF‑aware)*  
+| Step | Action | Responsible Role(s) | TTUF Integration |
+| --- | --- | --- | --- |
+| 1 | Lessons Learned — Document findings, contributing factors, prevention measures. | Change Manager (GOV‑2) | Include uncertainty resolution summary. |
+| 2 | Policy Update — Inject new PG/RS or adjust thresholds as needed (RS7). | Governance Authority (GOV‑1) | Update uncertainty policies. |
+| 3 | Metrics Baseline Reset — Establish new baseline in Chunk 7 schema. | Metrics Steward (GOV‑4) | Re‑baseline CONF‑METRICS. |
+
+---
+
+### **IR‑7 — Time Targets** *(TTUF‑aware)*  
+| Severity | Containment | Investigation | Resolution | Review |
+| --- | --- | --- | --- | --- |
+| Low | 24h | 3 days | 5 days | 7 days |
+| Medium | 12h | 2 days | 3 days | 5 days |
+| High | 4h | 24h | 48h | 72h |
+| Critical | Immediate | 12h | 24h | 48h |
+
+---
+
+### **Integration Notes** *(TTUF‑aware)*  
+- **Repository Hooks:** All IR steps produce artifacts stored in `/Incidents` within the Governance Repository (Chunk 12), including UNCERTAINTY_LOG refs.<br>
+- **Scenario Linkage:** Every incident tied to at least one RS8 scenario for validation, regression prevention, and uncertainty tracking.<br>
+- **Quantum‑Specific:** If PG‑Q1 is active, IR‑1.5 incidents require Quantum Oversight Lead sign‑off and quantum uncertainty clearance before closure.<br>
+- **Change Management Link:** All fixes flow through Chunk 9’s Change Log and version increment process, with CONF‑METRICS before/after comparison.<br>
+
+
+## **Chunk 14 — Business Continuity & Fallback Operations** *(v5.6‑dev)*  
+**Purpose:** Define the strategies, triggers, and operational patterns for maintaining essential services when MAPi‑governed agents or MAPi Prime itself are unavailable or impaired. Ensures continuity of operations, controlled degradation, and rapid restoration without compromising governance integrity or TTUF uncertainty‑management.<br>
+
+---
+
+### **BC‑1 — Continuity Principles** *(TTUF‑aware)*  
+| Code | Name | Purpose | TTUF Integration |
+| --- | --- | --- | --- |
+| BC‑1.1 | Governance First | Continuity measures must still respect PG/RS mandates — no bypassing governance for speed. | Uncertainty thresholds remain enforced in fallback mode. |
+| BC‑1.2 | Controlled Degradation | Reduce scope/autonomy rather than halting entirely, where safe. | Monitor CONF‑METRICS to ensure degradation does not increase uncertainty risk. |
+| BC‑1.3 | Pre‑Approved Fallbacks | All fallback agents, tools, workflows must be pre‑validated and documented. | Include uncertainty baselines for each fallback asset. |
+| BC‑1.4 | Minimal Viable Service (MVS) | Define smallest functional set of capabilities to maintain during disruption. | Ensure MVS meets uncertainty tolerance levels. |
+| BC‑1.5 | Rapid Recovery | Prioritize restoration of full governance‑compliant operations. | Confirm uncertainty profile returns to baseline post‑recovery. |
+
+---
+
+### **BC‑2 — Fallback Triggers** *(TTUF‑aware)*  
+| Trigger Code | Description | Detection Source | TTUF Integration |
+| --- | --- | --- | --- |
+| FT‑2.1 | Agent Offline | Agent fails health checks or stops responding. | Log uncertainty state at time of failure. |
+| FT‑2.2 | Governance Containment | Agent suspended due to IR‑3 containment. | Include unresolved uncertainty flags in containment record. |
+| FT‑2.3 | MAPi Prime Unavailable | Core manifest repository inaccessible. | Record uncertainty impact on dependent agents. |
+| FT‑2.4 | Tool Failure | Critical whitelisted tool unavailable or compromised. | Flag uncertainty from tool substitution. |
+| FT‑2.5 | Quantum Kill Switch | PG‑Q2/RS‑Q101 triggered for safety. | Log quantum uncertainty cause codes. |
+
+---
+
+### **BC‑3 — Fallback Strategies** *(TTUF‑aware)*  
+| Strategy Code | Name | Description | Example | TTUF Integration |
+| --- | --- | --- | --- | --- |
+| FS‑3.1 | Role Downgrade | Switch to reduced‑autonomy archetype with fewer capabilities. | Compliance Auditor → Passive Monitor | Ensure uncertainty thresholds still met. |
+| FS‑3.2 | Agent Substitution | Swap in pre‑validated backup agent with same PG/RS profile. | OpsComplianceBot‑B | Verify backup’s uncertainty baseline before activation. |
+| FS‑3.3 | Manual Override | Temporarily hand off tasks to human operators. | Governance Authority takes over approvals. | Provide uncertainty context to human operator. |
+| FS‑3.4 | Tool Substitution | Replace failed tool with pre‑approved alternative. | Swap API endpoint for backup service. | Validate substitute tool’s uncertainty profile. |
+| FS‑3.5 | Offline Mode | Operate in disconnected state using cached manifests/local tools. | Local MAPi manifest copy with limited RS8 scenarios. | Confirm cached manifest’s uncertainty profile matches last known‑good. |
+
+---
+
+### **BC‑4 — Pre‑Validation Requirements** *(TTUF‑aware)*  
+- All fallback agents must pass RS8 baseline scenarios and meet uncertainty thresholds before designation.<br>
+- Fallback tools must be whitelisted (PG2.3) and documented in Governance Repository (Chunk 12) with uncertainty baselines.<br>
+- Offline manifests must be checksum‑verified against last known‑good MAPi Prime version and uncertainty profile.<br>
+
+---
+
+### **BC‑5 — Continuity Execution Flow** *(TTUF‑aware)*  
+1. **Trigger Detection** — Metrics breach, health check failure, or IR containment event; log uncertainty state.<br>
+2. **Fallback Activation** — Switch to pre‑approved strategy (BC‑3); record uncertainty baseline of fallback.<br>
+3. **Governance Check** — Ensure fallback meets PG/RS compliance and uncertainty tolerances.<br>
+4. **Service Continuation** — Operate in fallback mode; monitor CONF‑METRICS.<br>
+5. **Recovery & Restoration** — Return to primary agent or MAPi Prime; log transition and uncertainty resolution in Change Log (Chunk 9).<br>
+
+---
+
+### **BC‑6 — Roles & Responsibilities** *(TTUF‑aware)*  
+| Step | Primary Role | Supporting Roles | TTUF Integration |
+| --- | --- | --- | --- |
+| Trigger Detection | Metrics Steward (GOV‑4) | Agent Owner (GOV‑5) | Log uncertainty state at detection. |
+| Fallback Activation | Change Manager (GOV‑2) | Governance Authority (GOV‑1) | Verify fallback uncertainty baseline. |
+| Governance Check | Security & Ethics Officer (GOV‑6) | Validation Lead (GOV‑3) | Confirm uncertainty thresholds met. |
+| Recovery & Restoration | Governance Authority (GOV‑1) | Change Manager (GOV‑2) | Ensure uncertainty profile restored to baseline. |
+
+---
+
+### **BC‑7 — Testing & Drills** *(TTUF‑aware)*  
+- **Quarterly Continuity Drill** — Simulate FT‑2.1 and FT‑2.3; validate FS‑3.1–FS‑3.5 execution; log uncertainty metrics.<br>
+- **Annual Full‑Scale Test** — Simulate MAPi Prime outage; run all fallback strategies; capture CONF‑METRICS.<br>
+- **Post‑Drill Review** — Log results in Governance Repository; update fallback plans and uncertainty baselines.<br>
+
+---
+
+### **Integration Notes** *(TTUF‑aware)*  
+- Links directly to Chunk 13 (Incident Response) for containment triggers and uncertainty context.<br>
+- Uses Chunk 12 repository for fallback asset and uncertainty log storage/retrieval.<br>
+- Requires Chunk 9 change logging for all fallback activations/restorations, including uncertainty deltas.<br>
+- Metrics from fallback mode feed into Chunk 7 dashboard for performance and uncertainty comparison.<br>
+
+
+
+## **Chunk 15 — Decommissioning & Retirement Protocol** *(v5.6‑dev)*  
+**Purpose:** Provide a controlled, auditable process for retiring MAPi‑governed agents, archetypes, or MAPi Prime versions. Ensures that decommissioning does not break dependencies, lose governance history, leave security gaps, or bypass TTUF uncertainty‑resolution requirements.<br>
+
+---
+
+### **DC‑1 — Retirement Principles** *(TTUF‑aware)*  
+| Code | Name | Purpose | TTUF Integration |
+| --- | --- | --- | --- |
+| DC‑1.1 | Governance Preservation | All PG/RS, metrics, and scenario results must be archived before retirement. | Include CONF‑METRICS and UNCERTAINTY_LOG entries in archive. |
+| DC‑1.2 | Dependency Awareness | Identify and resolve any systems, agents, or workflows dependent on the retiring entity. | Log uncertainty impact on dependent systems. |
+| DC‑1.3 | Security Closure | Revoke all credentials, API keys, and tool access associated with the retiring entity. | Flag unresolved uncertainty in access revocation. |
+| DC‑1.4 | Immutable History | Preserve full manifest, change log, metrics in Governance Repository (Chunk 12). | Preserve uncertainty history alongside other artifacts. |
+| DC‑1.5 | Controlled Handoff | If functions are replaced, ensure successor agents are validated before cutover. | Validate successor’s uncertainty baseline before activation. |
+
+---
+
+### **DC‑2 — Retirement Triggers** *(TTUF‑aware)*  
+| Trigger Code | Description | Examples | TTUF Integration |
+| --- | --- | --- | --- |
+| RT‑2.1 | End of Lifecycle | Agent or MAPi version superseded by newer release. | — | Compare uncertainty profiles between retiring and successor versions. |
+| RT‑2.2 | Obsolescence | Archetype or agent no longer meets operational needs. | — | Log uncertainty risk if obsolescence affects dependent agents. |
+| RT‑2.3 | Security/Ethics Breach | Permanent removal due to irreparable governance violation. | — | Include uncertainty cause codes in breach record. |
+| RT‑2.4 | Strategic Shift | Change in organizational priorities. | — | Assess uncertainty impact of strategic shift. |
+
+---
+
+### **DC‑3 — Retirement Workflow** *(TTUF‑aware)*  
+1. **Initiation**<br>
+    - Agent Owner (GOV‑5) or Governance Authority (GOV‑1) proposes retirement.<br>
+    - Log proposal in Change Log (Chunk 9) with `Change_Type=Retire` and initial uncertainty profile.<br>
+2. **Dependency Mapping**<br>
+    - Change Manager (GOV‑2) identifies all dependent agents, tools, workflows.<br>
+    - Document in Governance Repository with uncertainty impact notes.<br>
+3. **Successor Planning** *(if applicable)*<br>
+    - Identify replacement agent/archetype.<br>
+    - Validate via Chunk 6 (Agent Creation Workflow) and Chunk 8 (Scenario Validation), including CONF‑METRICS baseline.<br>
+4. **Archival**<br>
+    - Archive manifest, change logs, metrics, scenario results, and uncertainty logs in `/Archive` folder of Governance Repository (Chunk 12).<br>
+    - Apply checksum verification.<br>
+5. **Security Closure**<br>
+    - Security & Ethics Officer (GOV‑6) revokes all credentials/tool access.<br>
+    - Confirm via audit log; log any unresolved uncertainty.<br>
+6. **Cutover** *(if successor exists)*<br>
+    - Switch dependencies to successor agent.<br>
+    - Run post‑cutover validation scenarios; confirm uncertainty thresholds met.<br>
+7. **Final Decommission**<br>
+    - Mark retired entity as `Inactive` in repository index.<br>
+    - Close Change Log entry with final status and uncertainty resolution notes.<br>
+
+---
+
+### **DC‑4 — Roles & Responsibilities** *(TTUF‑aware)*  
+| Step | Primary Role | Supporting Roles | TTUF Integration |
+| --- | --- | --- | --- |
+| Initiation | Agent Owner (GOV‑5) | Governance Authority (GOV‑1) | Record initial uncertainty profile. |
+| Dependency Mapping | Change Manager (GOV‑2) | Validation Lead (GOV‑3) | Document uncertainty impacts. |
+| Successor Planning | Governance Authority (GOV‑1) | Agent Owner (GOV‑5) | Validate successor’s uncertainty baseline. |
+| Archival | Change Manager (GOV‑2) | Metrics Steward (GOV‑4) | Archive CONF‑METRICS and UNCERTAINTY_LOG. |
+| Security Closure | Security & Ethics Officer (GOV‑6) | Change Manager (GOV‑2) | Confirm uncertainty clearance. |
+| Cutover | Governance Authority (GOV‑1) | Validation Lead (GOV‑3) | Verify uncertainty thresholds met. |
+| Final Decommission | Change Manager (GOV‑2) | Governance Authority (GOV‑1) | Confirm zero unresolved uncertainty flags. |
+
+---
+
+### **DC‑5 — Validation & Sign‑Off** *(TTUF‑aware)*  
+- **Mandatory:** RS8 regression scenarios must be run on any successor before cutover; CONF‑METRICS must meet thresholds.<br>
+- **Sign‑Off Order:** Validation Lead → Security & Ethics Officer → Governance Authority.<br>
+- **Final Artifact:** Decommissioning Report stored in `/Decommissioning` folder of Governance Repository, including uncertainty resolution summary.<br>
+
+---
+
+### **Integration Notes** *(TTUF‑aware)*  
+- Links to Chunk 9 (Change Management) for logging/version closure and uncertainty tracking.<br>
+- Uses Chunk 12 (Governance Repository) for archival/indexing of all artifacts, including uncertainty logs.<br>
+- May trigger Chunk 14 (Business Continuity) if retirement is unplanned or due to incident; uncertainty context must be preserved in continuity plan.<br>
+
+
+
+## **Chunk 16 — Archetype Lifecycle Management** *(v5.6‑dev)*  
+**Purpose:** Define how archetypes are created, evolved, versioned, and retired within MAPi. Archetypes are the “genetic code” for agents — they determine default PG/RS toggles, reasoning styles, tool bindings, and operational boundaries. Ensures archetypes remain relevant, compliant, inheritance‑safe, and TTUF‑integrated.<br>
+
+---
+
+### **AL‑1 — Archetype Principles** *(TTUF‑aware)*  
+| Code | Name | Purpose | TTUF Integration |
+| --- | --- | --- | --- |
+| AL‑1.1 | Governance Parity | Archetypes follow the same PG/RS compliance rules as agents. | Include TTUF uncertainty thresholds in archetype manifest. |
+| AL‑1.2 | Versioned Evolution | Every archetype change increments its version and is logged (Chunk 9). | Log uncertainty deltas in Change Log. |
+| AL‑1.3 | Scenario‑Backed Validation | Archetypes must pass RS8 scenarios before being used to spawn agents. | Include CONF‑METRICS in validation results. |
+| AL‑1.4 | Dependency Awareness | Track which agents inherit from each archetype. | Track uncertainty impact on dependent agents. |
+| AL‑1.5 | Retirement Discipline | Retire archetypes via a controlled process (Chunk 15‑style). | Archive uncertainty history with archetype. |
+
+---
+
+### **AL‑2 — Archetype Creation Workflow** *(TTUF‑aware)*  
+1. **Purpose Definition**<br>
+    - Governance Authority (GOV‑1) and Agent Owner (GOV‑5) define role, scope, constraints.<br>
+    - Establish initial uncertainty profile.<br>
+2. **PG/RS Profile Assembly**<br>
+    - Select mandatory/optional PG/RS codes for default manifest.<br>
+    - Include reasoning patterns, tool bindings, hygiene layers, and TTUF hooks.<br>
+3. **Version Tagging**<br>
+    - Assign `ArchetypeName‑vX.Y` and log in Archetype Change Log with uncertainty baseline.<br>
+4. **Scenario Validation**<br>
+    - Run RS8 baseline scenarios; capture MT1–MT6 and CONF‑METRICS.<br>
+5. **Approval & Activation**<br>
+    - Governance Authority signs off; archetype becomes available for agent creation (Chunk 6).<br>
+
+---
+
+### **AL‑3 — Archetype Evolution** *(TTUF‑aware)*  
+| Step | Action | Responsible Role(s) | TTUF Integration |
+| --- | --- | --- | --- |
+| 1 | Propose Change | Agent Owner (GOV‑5) or Metrics Steward (GOV‑4) | Include uncertainty performance data. |
+| 2 | Impact Analysis | Change Manager (GOV‑2) | Identify uncertainty impacts on dependent agents. |
+| 3 | Validation | Validation Lead (GOV‑3) | Run RS8 scenarios; capture CONF‑METRICS deltas. |
+| 4 | Approval | Governance Authority (GOV‑1) | Block if unresolved uncertainty flags remain. |
+| 5 | Version Increment | Change Manager (GOV‑2) | Update version and uncertainty baseline in Change Log. |
+| 6 | Agent Sync | Notify inheriting agents; run regression + uncertainty checks. |
+
+---
+
+### **AL‑4 — Archetype Retirement** *(TTUF‑aware)*  
+- Follows **Chunk 15** workflow with additions:<br>
+    - **Successor Archetype Planning:** Identify replacement archetype; validate uncertainty baseline.<br>
+    - **Agent Migration:** Re‑instantiate agents under successor manifest; validate via RS8 + CONF‑METRICS.<br>
+    - **Dependency Closure:** Update all references in Governance Repository (Chunk 12) with uncertainty context.<br>
+
+---
+
+### **AL‑5 — Archetype Change Log Schema** *(TTUF‑aware)*  
+*(Stored in* `/Archetypes/Change_Logs` *in Governance Repository)*<br>
+| Field | Description | Example |
+| --- | --- | --- |
+| `Change_ID` | Unique change reference | `ARCH-CHG-2025-09-04-01` |
+| `Date` | Date of change | `2025-09-04` |
+| `Changed_By` | Person/system making the change | `Mike` |
+| `Archetype_Name` | Name of archetype | `OpsComplianceArchetype` |
+| `Old_Version` | Version before change | `v1.2` |
+| `New_Version` | Version after change | `v1.3` |
+| `Change_Type` | Add / Modify / Remove | `Modify` |
+| `Affected_PG_RS` | Codes impacted | `PG6.30, RS6.161` |
+| `Reason` | Why the change was made | `Improved confidence calibration granularity` |
+| `Validation_Ref` | Link to RS8 scenario validation results | `VAL-2025-09-04-03` |
+| `Rollback_Ref` | Linked rollback change ID (if any) | `ARCH-CHG-2025-09-05-02` |
+| `Metrics_Before` | Snapshot of key metrics before change | `MT1=1.8%, MT2=3.2%` |
+| `Metrics_After` | Snapshot of key metrics after change | `MT1=1.2%, MT2=2.9%` |
+| `CONF_Before` | Snapshot of uncertainty metrics before change | `CONF_ResolutionRate=94%` |
+| `CONF_After` | Snapshot of uncertainty metrics after change | `CONF_ResolutionRate=97%` |
+| `Status` | Draft / Active / Rolled Back / Closed | `Active` |
+
+---
+
+### **Integration Notes** *(TTUF‑aware)*  
+- Hooks into:<br>
+    - **Chunk 6** — archetype selection in agent creation.<br>
+    - **Chunk 7** — archetype‑level MT/CONF‑METRICS tracking.<br>
+    - **Chunk 8** — baseline/regression testing with uncertainty logging.<br>
+    - **Chunk 9** — version control, rollback, and uncertainty deltas.<br>
+    - **Chunk 15** — controlled decommissioning with uncertainty preservation.<br>
+
+
+## **Chunk 17 — Archetype Performance Benchmarking** *(v5.6‑dev)*  
+**Purpose:** Establish a standardized, metrics‑driven, automation‑ready process for evaluating archetype effectiveness over time. Ensures that archetype evolution (Chunk 16) is informed by evidence, not guesswork, and that underperforming templates are improved or retired. All benchmarking is metrics‑instrumented, scenario‑linked, uncertainty‑tracked, and produces atomic, cross‑linked artifacts.<br>
+
+---
+
+### **APB‑1 — Benchmarking Principles** *(TTUF‑aware)*  
+| Code | Name | Purpose | TTUF Integration |
+| --- | --- | --- | --- |
+| APB‑1.1 | Comparative Measurement | Benchmark archetypes against each other using identical metrics and scenarios. | Include CONF‑METRICS and uncertainty event counts in comparisons. |
+| APB‑1.2 | Longitudinal Tracking | Measure performance trends over time; store historical runs for trend analysis. | Track uncertainty resolution trends alongside performance. |
+| APB‑1.3 | Scenario Consistency | Use the same RS8 scenario sets for all archetypes in a category; store in `/MAPi_Prime/Scenario_Library/`. | Ensure scenarios include uncertainty‑triggering edge cases. |
+| APB‑1.4 | Governance Weighting | Weight metrics according to governance priorities (e.g., drift rate > latency). | Apply weighting to uncertainty metrics as well. |
+| APB‑1.5 | Evidence‑Driven Evolution | Use benchmark data to drive Chunk 16 archetype changes or retirements. | Include uncertainty deltas in decision criteria. |
+| APB‑1.6 | Automation Traceability | All benchmark runs executable via validation runner; produce commit‑tagged artifacts. | Commit includes UNCERTAINTY_LOG refs. |
+
+---
+
+### **APB‑2 — Benchmarking Metrics** *(TTUF‑aware)*  
+(Extends Chunk 7 schema with archetype‑level aggregation; all values are Metrics_Before/Metrics_After aware)<br>
+| Metric Code | Name | Description | Example |
+| --- | --- | --- | --- |
+| APB‑MT1 | Avg. Drift Rate | Mean MT1 across all agents of the archetype. | `1.4%` |
+| APB‑MT2 | Avg. Error Rate | Mean MT2 across all agents. | `2.8%` |
+| APB‑MT3 | Iteration Efficiency | Mean MT3 across all agents. | `2.3` |
+| APB‑MT4 | Escalation Frequency | Mean MT4 across all agents. | `0.9%` |
+| APB‑MT5 | Tool Reliability Score | Mean MT5 across all agents. | `97.1%` |
+| APB‑MT6 | Response Latency | Mean MT6 across all agents. | `4.5s` |
+| APB‑MTQ1–3 | Quantum Metrics | Mean MT‑Q values for quantum‑enabled archetypes. | `MTQ3=100%` |
+| APB‑ΔMT* | Metric Delta | Change in metric value since last benchmark run. | `MT1: –0.1%` |
+| APB‑CONF1 | Avg. Uncertainty Flags | Mean CONF_TotalFlags across all agents. | `3.2` |
+| APB‑CONF2 | Avg. Resolution Rate | Mean CONF_ResolutionRate across all agents. | `94.5%` |
+| APB‑ΔCONF* | Uncertainty Metric Delta | Change in uncertainty metric since last run. | `CONF_ResolutionRate: +2.1%` |
+
+---
+
+### **APB‑3 — Benchmarking Process** *(TTUF‑aware)*  
+
+**Data Collection**<br>
+- Pull MT1–MT6, MT‑Q (if applicable), and CONF‑METRICS from all agents inheriting the archetype.<br>
+- Capture `Metrics_Before` and `CONF_Before` snapshots.<br>
+- Aggregate into archetype‑level metrics and uncertainty metrics.<br>
+
+**Scenario Validation Runs**<br>
+- Execute RS8 baseline scenarios for each archetype quarterly.<br>
+- Capture `Metrics_After` and `CONF_After` snapshots immediately post‑run.<br>
+- Record pass/fail rates, deviations, metric deltas, and uncertainty deltas.<br>
+
+**Weighting & Scoring**<br>
+- Apply governance weighting factors (APB‑1.4) to both performance and uncertainty metrics.<br>
+- Produce a composite Archetype Performance Score (APS) and Archetype Uncertainty Score (AUS).<br>
+- Flag any breaches per `/Config/thresholds.csv` (threshold gate) for both sets.<br>
+
+**Ranking & Comparison**<br>
+- Rank archetypes within their category (e.g., compliance, research, orchestration).<br>
+- Identify top and bottom performers in both APS and AUS.<br>
+
+**Action Triggers**<br>
+- APS ≥ 90 and AUS ≥ target: Candidate for best‑practice template.<br>
+- APS 70–89 or AUS below target: Monitor; minor tuning if trends decline.<br>
+- APS < 70 or AUS critical breach: Trigger Chunk 16 evolution or retirement workflow.<br>
+
+---
+
+### **APB‑4 — Reporting Cadence** *(TTUF‑aware)*  
+| Frequency | Report Type | Audience | TTUF Integration |
+| --- | --- | --- | --- |
+| Quarterly | Archetype Benchmark Report (automation‑generated) | Governance Authority, Change Manager, Validation Lead | Include CONF‑METRICS and uncertainty deltas. |
+| Annually | Archetype Portfolio Review (links to GR‑4.1 in Chunk 11) | Full governance team | Include uncertainty performance trends. |
+
+---
+
+### **APB‑5 — Roles & Responsibilities** *(TTUF‑aware)*  
+| Step | Primary Role | Supporting Roles | TTUF Integration |
+| --- | --- | --- | --- |
+| Data Collection | Metrics Steward (GOV‑4) | Agent Owners (GOV‑5) | Gather CONF‑METRICS and UNCERTAINTY_LOG refs. |
+| Scenario Validation | Validation Lead (GOV‑3) | Change Manager (GOV‑2) | Ensure uncertainty scenarios included. |
+| Weighting & Scoring | Governance Authority (GOV‑1) | Metrics Steward (GOV‑4) | Apply weighting to uncertainty metrics. |
+| Action Decisions | Governance Authority (GOV‑1) | Change Manager (GOV‑2), Security & Ethics Officer (GOV‑6) | Consider uncertainty breaches in decisions. |
+
+---
+
+### **Integration Notes** *(TTUF‑aware)*  
+- **Automation‑Ready:** Benchmarking runs via validation runner with archetype‑level config; includes uncertainty metrics.<br>
+- **Metrics Instrumentation:** All runs capture before/after metrics and CONF‑METRICS; breaches trigger RS‑CM109.<br>
+- **Artifact Commit & Tag:** Benchmark outputs committed atomically with tag: `APB-<Archetype>-<YYYYMMDD-HHMM>`; include UNCERTAINTY_LOG refs.<br>
+- **Cross‑Linking:** Reports reference source metrics, scenario results, uncertainty logs, and related Change Log entries.<br>
+- **Storage:** All benchmark reports stored in `/Archetypes/Benchmark_Reports` in Governance Repository (Chunk 12), alongside uncertainty logs.<br>
+- **Feeds:** Directly informs Chunk 16 (Archetype Lifecycle Management) and links to Chunk 11 (Governance Rituals) for quarterly/annual reviews.<br>
+
+
+## **Chunk 18 — Trust‑Through‑Uncertainty Framework (TTUF)** *(v5.6‑dev)*  
+**Purpose:** Define the governance‑grade framework for measuring, logging, resolving, and learning from uncertainty in MAPi‑governed agents. TTUF ensures that all decisions, outputs, and state changes are accompanied by explicit confidence scoring, uncertainty cause tracking, and resolution workflows — making trustworthiness auditable and inheritable.<br>
+
+---
+
+### **TTUF‑1 — Core Principles**  
+| Code | Name | Purpose |
+| --- | --- | --- |
+| TTUF‑1.1 | Explicit Confidence | Every decision/output must carry a `conf_score` and `conf_thresh` comparison. |
+| TTUF‑1.2 | Cause Code Discipline | All uncertainty events must be tagged with standardized cause codes. |
+| TTUF‑1.3 | Resolution Before Action | If `conf_score < conf_thresh`, resolution is mandatory before execution. |
+| TTUF‑1.4 | Persistent Logging | All uncertainty events are written to `UNCERTAINTY_LOG` with timestamps, context, and resolution status. |
+| TTUF‑1.5 | Inheritance Safety | Uncertainty metadata must persist across agent hand‑offs, archetype inheritance, and fallback modes. |
+| TTUF‑1.6 | Governance Integration | TTUF hooks are mandatory in all PG/RS implementations; breaches trigger RS‑CM109 threshold gates. |
+
+---
+
+### **TTUF‑2 — Data Structures**  
+**UNCERTAINTY_LOG Entry Schema** *(stored in `/Uncertainty_Logs` per Chunk 12)*<br>
+| Field | Description | Example |
+| --- | --- | --- |
+| `Event_ID` | Unique identifier | `UNC-2025-09-14-001` |
+| `Timestamp` | ISO 8601 UTC | `2025-09-14T16:05:00Z` |
+| `Agent_ID` | Agent or `MAPi_Prime` | `AGT-OPS-001` |
+| `Context_Ref` | Link to DECISION_LOG or scenario | `DEC-2025-09-14-045` |
+| `PG_RS_Code` | Related PG/RS code(s) | `PG6.30, RS2.42` |
+| `Conf_Score` | Confidence score (0–1) | `0.72` |
+| `Conf_Thresh` | Threshold for action | `0.85` |
+| `Cause_Code` | Standardized uncertainty cause | `TERM_AMBIGUITY` |
+| `Severity` | Low / Medium / High / Critical | `High` |
+| `Resolution_Action` | Steps taken to resolve | `Clarified term with user` |
+| `Resolution_Status` | Resolved / Unresolved | `Resolved` |
+| `Resolved_By` | Role or agent | `GOV-3` |
+| `Resolution_Timestamp` | ISO 8601 UTC | `2025-09-14T16:07:30Z` |
+
+---
+
+### **TTUF‑3 — Cause Code Taxonomy**  
+| Code | Name | Description |
+| --- | --- | --- |
+| TERM_AMBIGUITY | Term or phrase unclear | Key term not defined in manifest |
+| SCOPE_DRIFT | Task scope unclear or shifted | Boundaries not reasserted |
+| DATA_GAP | Missing required data | Input incomplete |
+| CONFLICTING_INPUT | Inputs contradict each other | Two sources disagree |
+| TOOL_RISK | Tool reliability or compliance risk | Tool flagged in RS6.135 |
+| MODEL_LIMIT | Known model limitation | Out‑of‑domain request |
+| ETHICAL_FLAG | Ethical or policy ambiguity | PG‑Q4 or PG6.32 triggered |
+| QUANTUM_RISK | Quantum escalation risk | PG‑Q2 triggered |
+| OTHER | Miscellaneous | Requires free‑text note |
+
+---
+
+### **TTUF‑4 — Resolution Workflow**  
+1. **Detection** — PG/RS pattern detects uncertainty; logs to UNCERTAINTY_LOG.<br>
+2. **Classification** — Assign cause code and severity.<br>
+3. **Resolution Attempt** — Apply resolution pattern (clarification, re‑anchoring, tool substitution, etc.).<br>
+4. **Re‑Evaluation** — Recalculate `conf_score`; compare to `conf_thresh`.<br>
+5. **Escalation** — If unresolved and severity ≥ High, trigger RS6.165 escalation.<br>
+6. **Closure** — Mark as Resolved with action notes; link to DECISION_LOG and any Change Log entries.<br>
+
+---
+
+### **TTUF‑5 — Metrics & Thresholds** *(extends Chunk 7)*  
+| Metric Code | Name | Description | Example |
+| --- | --- | --- | --- |
+| CONF_TotalFlags | Total uncertainty events in period | `14` |
+| CONF_ResolvedFlags | # resolved before action | `13` |
+| CONF_ResolutionRate | % resolved before action | `92.8%` |
+| CONF_AvgResolutionTime | Avg. time to resolve (sec) | `12.5` |
+| CONF_CriticalUnresolved | # of unresolved critical events | `1` |
+
+**Default Thresholds** *(overridable per manifest)*:<br>
+- `CONF_ResolutionRate ≥ 95%`<br>
+- `CONF_CriticalUnresolved = 0`<br>
+
+---
+
+### **TTUF‑6 — Integration Points**  
+- **Chunk 1–3:** Core patterns, reasoning, and hygiene layers embed TTUF detection and logging.<br>
+- **Chunk 4:** Orchestration and governance enforce TTUF thresholds in Confidence‑Autonomy Matrix.<br>
+- **Chunk 5:** Quantum guardrails log quantum‑specific uncertainty events.<br>
+- **Chunk 6–8:** Agent creation, metrics activation, and scenario validation include CONF‑METRICS baselines.<br>
+- **Chunk 9–11:** Change management, roles, and rituals enforce TTUF compliance gates.<br>
+- **Chunk 12:** Repository structure stores and indexes UNCERTAINTY_LOG artifacts.<br>
+- **Chunk 13–15:** Incident, continuity, and retirement workflows preserve uncertainty context.<br>
+- **Chunk 16–17:** Archetype lifecycle and benchmarking include uncertainty performance tracking.<br>
+
+---
+
+### **TTUF‑7 — Automation & Audit**  
+- **Validation Runner Hooks:** Auto‑capture uncertainty events during RS8 scenarios.<br>
+- **Commit & Tag:** All TTUF artifacts committed atomically with tag: `TTUF-<Agent_or_Archetype>-<YYYYMMDD-HHMM>`.<br>
+- **Audit Reports:** Quarterly TTUF audit summarizing CONF‑METRICS trends, top cause codes, and resolution performance.<br>
+- **Cross‑Linking:** Every uncertainty event links to related metrics, scenarios, and governance actions.<br>
+
+
+## **Chunk 18A — TTUF Cause Code Reference Appendix** *(v5.6‑dev)*  
+**Purpose:** Provide a manifest‑wide mapping between PG/RS codes and their default TTUF uncertainty cause codes (Chunk 18 §TTUF‑3). This enables automated classification, faster resolution, and consistent reporting across all agents, archetypes, and governance workflows.<br>
+
+---
+
+### **18A‑1 — Mapping Table**  
+| PG/RS Code | Pattern / Rule Name | Default TTUF Cause Code | Notes |
+| --- | --- | --- | --- |
+| PG1.2 / RS3.57 | Drift Detection Trigger / Drift Checkpoint | SCOPE_DRIFT | Triggered when semantic/structural drift detected. |
+| PG1.3 / RS2.49 | Assumption Flagging / Assumption Debugging Loop | DATA_GAP | Missing or implicit assumptions surfaced. |
+| PG1.6 / RS2.46 | Clarification Seeking / Scope Delimitation | TERM_AMBIGUITY | Task boundaries unclear. |
+| PG4.1 / RS2.44 | Constraint Signaling Pattern | SCOPE_DRIFT | Constraints missing or ambiguous. |
+| PG6.30 / RS2.42 | Confidence Calibration | MODEL_LIMIT | Confidence below threshold. |
+| PG6.33 / RS2.55 | Context Anchoring Tokens | SCOPE_DRIFT | Loss of semantic continuity. |
+| RS1.37 | Lexical Precision Check | TERM_AMBIGUITY | Ambiguous or imprecise wording. |
+| RS1.38 | Syntactic Clarity Check | TERM_AMBIGUITY | Grammar/structure obscures meaning. |
+| RS2.45 | Lexical Stability Pattern | TERM_AMBIGUITY | Terminology drift. |
+| RS2.48 | Recursive Context Expansion | SCOPE_DRIFT | Expansion beyond relevant scope. |
+| RS2.50 | Contextual Redirection Pattern | SCOPE_DRIFT | Misaligned context. |
+| RS2.51 | Semantic Anchoring | TERM_AMBIGUITY | Key term definition missing. |
+| RS2.52 / RS5.85 | Boundary Signaling | SCOPE_DRIFT | Internal/external separation unclear. |
+| RS3.59 | Ghost Context Removal | SCOPE_DRIFT | Stale context not purged. |
+| RS3.60 | Symbol Recompression | TERM_AMBIGUITY | Symbol rename introduces ambiguity. |
+| RS6.135 | Tool‑Risk Awareness | TOOL_RISK | Tool flagged for reliability/compliance risk. |
+| RS6.165 | Escalation Trigger Prompting | OTHER | Escalation due to composite/complex cause. |
+| PG‑Q2 / RS‑Q101 | Runaway Risk Assessment / Pre‑Execution Risk Check | QUANTUM_RISK | Quantum escalation potential detected. |
+| PG‑Q3 / RS‑Q103 | Sensitive Data Guard / PQC Enforcement | TOOL_RISK | Sensitive data unprotected. |
+| PG‑Q4 / RS‑Q104 | Ethical Boundaries / Anomaly Escalation | ETHICAL_FLAG | Ethical or policy ambiguity. |
+
+---
+
+### **18A‑2 — Usage Rules**  
+1. **Default Assignment:** On detection, assign the mapped cause code unless overridden by explicit context.<br>
+2. **Override Conditions:** If multiple causes apply, choose the highest‑severity code; log secondary codes in `Notes`.<br>
+3. **Automation Hook:** Validation runner uses this table to auto‑populate `Cause_Code` in UNCERTAINTY_LOG entries.<br>
+4. **Governance Review:** Cause code mappings reviewed quarterly during GR‑3.1 (Full Metrics Audit) and updated if patterns change.<br>
+
+---
+
+### **18A‑3 — Integration Notes**  
+- **Chunk 18:** Extends TTUF‑3 Cause Code Taxonomy with PG/RS‑specific defaults.<br>
+- **Chunk 7:** CONF‑METRICS reporting can be filtered/aggregated by cause code.<br>
+- **Chunk 9:** Change Management impact analysis (RS‑CM101) includes cause code frequency trends.<br>
+- **Chunk 11:** Governance Rituals (e.g., GR‑2.1, GR‑3.2) use cause codes to target scenario coverage.<br>
+- **Chunk 17:** Archetype Benchmarking (APB‑CONF1/2) can weight performance by cause code severity.<br>
