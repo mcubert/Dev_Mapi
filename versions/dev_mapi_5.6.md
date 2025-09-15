@@ -164,6 +164,118 @@ This plan describes how MAPi 5.6 will evolve to integrate the external archite
 MAPi 5.6 will retain its governance‑first, uncertainty‑aware foundation while gaining the execution‑layer sophistication, adaptability, and scalability of the best current agentic AI architectures.
 
 
+# MAPi 5.6 — Phase 1 Build Sheet
+**Objective:** Stand up the foundational structures, manifests, and governance hooks needed to integrate external architectures and patterns into MAPi 5.6, without disrupting existing operational stability.
+
+---
+
+## 1. New PG/RS Families
+
+**Create:**
+- RS‑PAT‑REFL — Reflection Pattern
+- RS‑PAT‑REACT — ReAct Pattern
+- RS‑PAT‑PLAN — Planning Pattern
+- RS‑PAT‑COLL — Multi‑Agent Collaboration
+- RS‑PAT‑TOOL — Tool Use Pattern
+- RS‑PAT‑PAR / RS‑PAT‑SEQ / RS‑PAT‑LOOP / RS‑PAT‑ROUT / RS‑PAT‑AGGR / RS‑PAT‑NET / RS‑PAT‑HIER — Multi‑Agent Topologies
+- RS‑PAT‑HIER‑LOOP‑PAR‑RAG — Composite Hierarchy + Loop + Parallel + Shared RAG
+- RS‑ARCH‑VERT / RS‑ARCH‑HORZ / RS‑ARCH‑HYBR — Collaboration Models
+- RS‑ARCH‑REACT / RS‑ARCH‑DELIB / RS‑ARCH‑COG / RS‑ARCH‑BDI — Reasoning Maturity Models
+
+**For each:**
+- Define **Purpose**, **Scope**, **Governance Hooks**, **TTUF Cause‑Code Mappings**, **CONF‑Metric Targets**, **Escalation Rules**.
+- Store in `/Patterns` with manifest‑compliant formatting.
+
+---
+
+## 2. Chunk 6.1 — Architecture Selection Matrix
+
+**Create:**
+- Decision table mapping:
+  - **Task Complexity** → PG/RS family
+  - **Specialization Needs** → Single vs. Multi‑Agent
+  - **Control/Oversight** → GOV role involvement, TTUF thresholds
+  - **Resource Constraints** → Agent count/model size limits
+  - **Framework Choice** → Governance‑approved adapters (LangChain, AutoGen, LangGraph, CrewAI)
+
+**Governance Hooks:**
+- All new agent requests must pass through this matrix.
+- Output stored in archetype manifest (`Selection_Factors`).
+
+---
+
+## 3. Archetype Manifest Enrichment (Chunk 16)
+
+**Add Fields:**
+- `Collaboration_Model` (Vertical, Horizontal, Hybrid)
+- `Workflow_Type` (Linear, Hierarchical, Hybrid)
+- `Architecture_Type` (Reactive, Deliberative, Cognitive, BDI)
+- `Agent_Generation` (1.0, 2.0)
+- `Selection_Factors` (from Chunk 6.1)
+
+**Governance Hooks:**
+- Fields drive RS8 scenario coverage, TTUF thresholds, GOV role mapping.
+
+---
+
+## 4. TTUF Cause Code Reference Appendix (Chunk 18A Update)
+
+**Extend:**
+- Add mappings for all new RS‑PAT and RS‑ARCH families.
+- Include composite cause‑codes for multi‑agent uncertainty aggregation, leadership transitions, shared RAG events, loop iteration outcomes, and parallel synthesis.
+
+---
+
+## 5. Governance Role Mapping
+
+**Define:**
+- GOV‑1 ↔ Supervisor / Leader agents (Vertical/Hybrid)
+- GOV‑2 ↔ Planner / Middle‑Tier Leads
+- GOV‑3 ↔ Validator / Critic agents
+- GOV‑4 ↔ Metrics Steward / Monitoring agents
+- GOV‑6 ↔ Security & Ethics Officer (tool binding, RAG governance)
+
+---
+
+## 6. Repository & Folder Structure
+
+**Add:**
+- `/Patterns` — PG/RS family definitions
+- `/Architecture_Models` — RS‑ARCH definitions
+- `/Selection_Matrix` — Chunk 6.1 decision table
+- `/TTUF_Extensions` — Extended cause‑code mappings
+
+---
+
+## 7. Initial Automation Lanes (Low‑Risk)
+
+**Criteria:**
+- PG/RS family with ≥ 3 cycles of stable CONF‑metrics
+- No critical cause‑codes in last N runs
+- All RS8 scenarios pass with ≥ 95% confidence
+
+**Governance Hooks:**
+- Auto‑approval for changes within these families
+- GOV‑role gates remain for safety/security/critical ops
+
+---
+
+## 8. Phase 1 Deliverables Checklist
+
+- [ ] All new PG/RS and RS‑ARCH families defined and stored in `/Patterns` and `/Architecture_Models`
+- [ ] Chunk 6.1 selection matrix created and linked to archetype manifests
+- [ ] Archetype manifests updated with new fields
+- [ ] Chunk 18A updated with extended TTUF cause‑codes
+- [ ] Governance role mappings documented
+- [ ] Repository structure updated
+- [ ] Initial automation lane criteria implemented
+
+---
+
+**Phase 1 Goal:**  
+By the end of Phase 1, MAPi 5.6 will have the structural scaffolding to govern any of the integrated external patterns and architectures, with selection logic, enriched manifests, and TTUF extensions in place — ready for Phase 2’s deeper TTUF instrumentation.
+
+
 
 
 
