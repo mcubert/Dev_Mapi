@@ -34,6 +34,138 @@ It preserves MAPi’s governance DNA while absorbing the best of these external 
 5. **Instrument shared knowledge** — all RAG retrievals/updates logged with uncertainty metadata.
 
 
+# MAPi 5.6 Structural Adaptation Plan
+
+This plan describes how MAPi 5.6 will evolve to integrate the external architectures, patterns, and frameworks captured in the **External Integration Matrix**, while preserving its governance-first, uncertainty-aware core.
+
+---
+
+## 1. Pattern & Topology Codification
+
+**Action:**  
+- Create new PG/RS families for each external pattern/topology (e.g., RS‑PAT‑REFL, RS‑PAT‑REACT, RS‑PAT‑PLAN, RS‑PAT‑COLL, RS‑PAT‑PAR, RS‑PAT‑SEQ, RS‑PAT‑LOOP, RS‑PAT‑ROUT, RS‑PAT‑AGGR, RS‑PAT‑NET, RS‑PAT‑HIER, RS‑PAT‑HIER‑LOOP‑PAR‑RAG).  
+- For IBM models, add RS‑ARCH‑VERT, RS‑ARCH‑HORZ, RS‑ARCH‑HYBR, RS‑ARCH‑REACT, RS‑ARCH‑DELIB, RS‑ARCH‑COG, RS‑ARCH‑BDI.
+
+**Governance Hooks:**  
+- Each PG/RS family includes TTUF cause‑code mappings, CONF‑metric targets, escalation rules, and archetype manifest fields.
+
+---
+
+## 2. Architecture Selection Matrix (Chunk 6.1)
+
+**Action:**  
+- Embed Product Compass decision factors (task complexity, specialization, oversight, resource constraints, framework choice) into a formal selection matrix.  
+- Link matrix outputs to PG/RS families and TTUF baselines.
+
+**Governance Hooks:**  
+- All new agent requests pass through this matrix before creation.  
+- Matrix output stored in archetype manifest for traceability.
+
+---
+
+## 3. Archetype Manifest Enrichment
+
+**New Fields:**  
+- `Collaboration_Model` (Vertical, Horizontal, Hybrid)  
+- `Workflow_Type` (Linear, Hierarchical, Hybrid)  
+- `Architecture_Type` (Reactive, Deliberative, Cognitive, BDI)  
+- `Agent_Generation` (1.0, 2.0)  
+- `Selection_Factors` (from Chunk 6.1 output)
+
+**Governance Hooks:**  
+- Manifest fields drive scenario coverage, TTUF thresholds, and GOV role involvement.
+
+---
+
+## 4. TTUF Coverage Expansion
+
+**New TTUF Logging Requirements:**  
+- Multi‑agent uncertainty aggregation (parallel, aggregator, mixture of agents)  
+- Leadership transitions in hybrid/vertical models  
+- Shared RAG retrieval/update events  
+- Loop iteration outcomes and resolution rates  
+- Parallel branch synthesis confidence
+
+**Governance Hooks:**  
+- Cause‑codes for belief errors, desire conflicts, intention feasibility (BDI)  
+- Escalation triggers for unresolved uncertainty after N iterations
+
+---
+
+## 5. Automation Lanes for Low‑Risk Patterns
+
+**Action:**  
+- Define criteria for “low‑risk” PG/RS families (stable metrics, no critical cause‑codes in N cycles).  
+- Enable auto‑approval for changes within these families.
+
+**Governance Hooks:**  
+- GOV‑role gates remain for safety, security, critical ops, or intent/actual divergence.
+
+---
+
+## 6. Shared Knowledge Instrumentation
+
+**Action:**  
+- Treat all RAG or shared knowledge stores as governed repositories (Chunk 12).  
+- Enforce provenance checks, drift detection, and uncertainty logging on all retrieval/update events.
+
+**Governance Hooks:**  
+- DATA_GAP cause‑codes for missing knowledge  
+- CONFLICTING_INPUT for inconsistent updates  
+- SCOPE_DRIFT for misaligned queries
+
+---
+
+## 7. Chunk Map Changes
+
+**New / Updated Chunks:**  
+- **Chunk 6.1** — Architecture Selection Matrix  
+- **Chunk 16** — Archetype Manifest (enriched fields)  
+- **Chunk 18A** — TTUF Cause Code Reference Appendix (extended for new patterns)  
+- **Chunk RS‑PAT** series — Pattern definitions with governance hooks  
+- **Chunk RS‑ARCH** series — Architecture definitions with governance hooks
+
+---
+
+## 8. Weakness Mitigation Alignment
+
+| Weakness | Mitigation in Plan |
+| --- | --- |
+| Operational overhead | Automation lanes, parallelism, orchestration frameworks |
+| Threshold brittleness | Dynamic thresholds tied to architecture type and loop outcomes |
+| Scenario drift | Live RAG updates, dynamic scenario injection |
+| Role bottlenecks | Distributed orchestration via planner/router agents |
+| Dependency fragility | Explicit topology manifests and fallback mappings |
+| Security blind spots | API Mgmt, Key Vault, provenance checks |
+
+---
+
+## 9. Implementation Phasing
+
+**Phase 1 — Foundation:**  
+- Add new PG/RS and RS‑ARCH families  
+- Implement Chunk 6.1 selection matrix  
+- Enrich archetype manifests
+
+**Phase 2 — TTUF Expansion:**  
+- Extend TTUF logging to new events  
+- Integrate cause‑codes for BDI and multi‑agent patterns
+
+**Phase 3 — Automation & Optimization:**  
+- Define and enable low‑risk automation lanes  
+- Instrument shared RAG governance
+
+**Phase 4 — Continuous Review:**  
+- Quarterly review of pattern performance, TTUF thresholds, and automation lane safety
+
+---
+
+**Outcome:**  
+MAPi 5.6 will retain its governance‑first, uncertainty‑aware foundation while gaining the execution‑layer sophistication, adaptability, and scalability of the best current agentic AI architectures.
+
+
+
+
 
 ## 🧠 MAPi v5.6‑dev — Manifest‑Aware Prompt Interpreter  
 A pattern language for drift‑resistant, audit‑enforced, adaptive agentic AI orchestration — with modular Quantum Readiness, Runaway Guardrails, **and Trust‑Through‑Uncertainty Framework** [ADDED]
